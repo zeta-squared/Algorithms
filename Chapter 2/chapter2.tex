@@ -1,0 +1,28 @@
+\section{Chapter 2}
+\label{sec:chp2}
+
+\section*{2.1--2}
+
+\begin{algorithmic}[1]
+	\For{i = 1 \textbf{ to } A.length - 1}
+	\State $key = A[i]$
+	\State $j = i - 1$
+	\While{j > 0 \text{ and } A[j] < key}
+	\State $A[j+1] = A[j]$
+	\State $j = j - 1$
+	\EndWhile
+	\State $A[i+1]=key$
+\end{algorithmic}
+
+\subsection*{2.1--3}
+
+\begin{algorithmic}[1]
+	\For{i = 0 \textbf{ to } A.length - 1}
+	\If{A[i] == \nu}
+	\State \textbf{return} i
+	\State \textbf{return} NIL
+\end{algorithmic}
+
+At the start of each iteration of the \textbf{for} loop (lines 1--3) $i-1$ is not an index $A$ such that $A[i-1]=\nu$.
+
+Let us now prove the correctness of our algorithm. Suppose $i=0$, then $i-1$ is clearly not an index of $A$ and hence $A[i-1]$ is undefined. Now suppose the loop invariant is true for some $i$, that is, $i-1$ is not an index of $A$ such that $A[i-1]=\nu$, or equivalently, $A[i-1]\neq\nu$. Then at line 2 the \textbf{if} loop will \textbf{return} $i$ if $A[i]=\nu$, in which case the \textbf{for} loop terminates and there is no further iteration. Otherwise, if $A[i]\neq\nu$ then at the start of the next for loop iteration $(i+1)-1$ is not an index of $A$ such that $A[(i+1)-1]=\nu$. Finally, for termination to occur we have either $i=n+1$ where $n=A.length$ in which case the algorithm returns NIL indicating $\nu$ is not an element of $A$. Otherwise, termination occurs because of the nested \textbf{if} on line 2 which causes the algorithm to return $i$ which indicates the index of $A$ such that $A[i]=\nu$.
