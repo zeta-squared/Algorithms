@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.23)  19 JUN 2022 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.29)  21 JUN 2022 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,12 +468,12 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 11.
+e 24.
  (/usr/share/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 11.
+(Font)              scaled to size 12.0pt on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
@@ -483,53 +483,53 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 (./Chapter 2/chapter2.aux))
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 11.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 24.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 11.
+ 24.
  (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-11.
+24.
 (/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 11.
+ 24.
 
 (/usr/share/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 11.
+e 24.
 
 (/usr/share/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 \c@mv@tabular=\count302
 \c@mv@boldtabular=\count303
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -542,41 +542,41 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 13.
+(Font)              scaled to size 20.74pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 13.
+(Font)              scaled to size 14.4pt on input line 26.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 13.
+e 26.
 
 (/usr/share/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-13.
+26.
 
 (/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-13.
+26.
 
 (/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-13.
+26.
 
 (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 14.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 14.
+(Font)              scaled to size 17.28pt on input line 27.
  (./notes.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -602,38 +602,32 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 8.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 20.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 38.
+ [2
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-[2
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-) [3] (./notes.aux (./Chapter 2/chapter2.aux)) ) 
+])
+[3] [4] (./notes.aux (./Chapter 2/chapter2.aux)) ) 
 Here is how much of TeX's memory you used:
- 13088 strings out of 478238
- 195467 string characters out of 5850456
- 470680 words of memory out of 5000000
- 31103 multiletter control sequences out of 15000+600000
- 511203 words of font info for 110 fonts, out of 8000000 for 9000
+ 13108 strings out of 478238
+ 195678 string characters out of 5850456
+ 471824 words of memory out of 5000000
+ 31116 multiletter control sequences out of 15000+600000
+ 513136 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,90p,987b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/en
-c/dvips/newtx/ntx-ot1-tlf-pc.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/n
-tx-ot1-tlf.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></us
-r/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/f
-onts/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/new
-tx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on notes.pdf (3 pages, 129510 bytes).
+ 84i,6n,90p,995b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/
+enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/nt
+x-ot1-tlf-pc.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></
+usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist
+/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public
+/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr
+/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/font
+s/type1/public/newtx/ztmri.pfb>
+Output written on notes.pdf (4 pages, 135101 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

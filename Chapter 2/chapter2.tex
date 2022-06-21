@@ -30,15 +30,23 @@
 	\EndProcedure
 \end{algorithmic}
 
-At the start of each iteration of the \textbf{for} loop (lines 2--7) $i-1$ is not an index of $A$ such that $A[i-1]=\nu$.
+\begin{invariant}
+	At the start of each iteration of the \textbf{for} loop (lines 2--7) $i-1$ is not an index of $A$ such that $A[i-1]=\nu$.
+\end{invariant}
 
-Let us now prove the correctness of our algorithm. Suppose $i=0$, then $i-1$ is clearly not an index of $A$ and hence $A[i-1]$ is undefined. Now suppose the loop invariant is true for some $i$, that is, $i-1$ is not an index of $A$ such that $A[i-1]=\nu$, or equivalently, $A[i-1]\neq\nu$. Then at line 3 the \textbf{if} loop will \textbf{return} $i$ if $A[i]=\nu$, in which case the \textbf{for} loop terminates and there is no further iteration. Otherwise, if $A[i]\neq\nu$ then at the start of the next for loop iteration $(i+1)-1$ is not an index of $A$ such that $A[(i+1)-1]=\nu$. Finally, for termination to occur we have either $i=n+1$ where $n=A.length$ in which case the algorithm returns NIL indicating $\nu$ is not an element of $A$. Otherwise, termination occurs because of the nested \textbf{if} on line 3 which causes the algorithm to return $i$ which indicates the index of $A$ such that $A[i]=\nu$.
+\begin{proof}
+	Let us now prove the correctness of our algorithm. Suppose $i=0$, then $i-1$ is clearly not an index of $A$ and hence $A[i-1]$ is undefined. Now suppose the loop invariant is true for some $i$, that is, $i-1$ is not an index of $A$ such that $A[i-1]=\nu$, or equivalently, $A[i-1]\neq\nu$. Then at line 3 the \textbf{if} loop will \textbf{return} $i$ if $A[i]=\nu$, in which case the \textbf{for} loop terminates and there is no further iteration. Otherwise, if $A[i]\neq\nu$ then at the start of the next for loop iteration $(i+1)-1$ is not an index of $A$ such that $A[(i+1)-1]=\nu$. Finally, for termination to occur we have either $i=n+1$ where $n=A.\text{length}$ in which case the algorithm returns NIL indicating $\nu$ is not an element of $A$. Otherwise, termination occurs because of the nested \textbf{if} on line 3 which causes the algorithm to return $i$ which indicates the index of $A$ such that $A[i]=\nu$.
+\end{proof}
 
 \subsection*{2.1--4}
 
-\noindent\textbf{Input:} Two sequences of $n$ integers, $A=(a_{1},\ldots,a_{n})$ and $B=(b_{1},\ldots,b_{n})$, such that $0\leq a_{i},b_{i}\leq 1$ for $i=1,\ldots,n$. Least significant digits are first.\\
+\begin{inp}
+	Two sequences of $n$ integers, $A=(a_{1},\ldots,a_{n})$ and $B=(b_{1},\ldots,b_{n})$, such that $0\leq a_{i},b_{i}\leq 1$ for $i=1,\ldots,n$. Least significant digits are first.
+\end{inp}
 
-\noindent\textbf{Output:} An array $C=(c_{1},\ldots,c_{n},c_{n+1})$ such that $0\leq c_{i}\leq 1$ for $i=1,\ldots,n+1$ and $C'=A'+B'$ where $\cdot'$ is the integer represented by $\cdot$.\\
+\begin{outp}
+	An array $C=(c_{1},\ldots,c_{n},c_{n+1})$ such that $0\leq c_{i}\leq 1$ for $i=1,\ldots,n+1$ and $C'=A'+B'$ where $\cdot'$ is the integer represented by $\cdot$.
+\end{outp}
 
 \begin{algorithmic}[1]
 	\Procedure{\textit{BINARY ADDITION}}{$A$, $B$}
@@ -52,3 +60,31 @@ Let us now prove the correctness of our algorithm. Suppose $i=0$, then $i-1$ is 
 	\State \Return C
 	\EndProcedure
 \end{algorithmic}
+
+\subsection*{2.2--1}
+
+The function is $O(x^{3})$
+
+\subsection*{2.2--2}
+
+\begin{algorithmic}[1]
+	\Procedure{\textit{SELECTION SORT}}{$A$}
+	\For{$i=0$ \textbf{to} $A.\text{length}-2$}
+	\State $\text{min} = i$
+	\For{$j=i+1$ \textbf{to} $A.\text{length}-1$}
+	\If{$A[j] < A[\text{min}]$}
+	\State $\text{min} = j$
+	\EndIf
+	\EndFor
+	\State $M=A[\text{min}]$
+	\State $A[\text{min}] = A[i]$
+	\State $A[i] = M$
+	\EndFor
+	\EndProcedure
+\end{algorithmic}
+
+\begin{invariant}
+	At the start of each iteration of the \textbf{for} loop (lines 2--12) the sub--array $A[0\ldots i]$ is sorted in non--decreasing order.
+\end{invariant}
+
+The algorithm only needs to run for the first $n-1$ elements since this will arrange the $n-1$ smallest elements in non--decreasing order, ensuring the $n^{\text{th}}$ element at the end is in the appropriate position. That is, $A[n]\geq A[i]$ for $i=0,\ldots,n-2$.
