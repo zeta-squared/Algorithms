@@ -3,35 +3,37 @@
 
 \section*{2.1--2}
 
-\begin{algorithmic}[1]
-	\Procedure{\textit{INSERTION SORT}}{$A$}
-	\For{$i = 1$ \textbf{to} $A.\text{length} - 1$}
-	\State $\text{key} = A[i]$
-	\State $j = i - 1$
-	\While{$j > 0$ \textbf{and} $A[j] < \text{key}$}
-	\State $A[j+1] = A[j]$
-	\State $j = j - 1$
-	\EndWhile
-	\State $A[i+1]=\text{key}$
-	\EndFor
-	\EndProcedure
-\end{algorithmic}
+\begin{codebox}
+	\Procname{$\proc{Decreasing-Insertion-Sort}(A)$}
+	\li \For $i = 1$ \To $A.\text{length}-1$
+	\li	\Do
+				key $= A[i]$
+	\li 	$j = i - 1$
+	\li		\While $j > 0$ \textbf{and} $A[j] <$ key
+	\li		\Do
+					$A[j+1] = A[j]$
+	\li			$j = j - 1$
+				\End
+	\li		$A[i+1] =$ key
+			\End
+\end{codebox}
 
 \subsection*{2.1--3}
 
-\begin{algorithmic}[1]
-	\Procedure{\textit{LINEAR SEARCH}}{$A$, $\nu$}
-	\For{$i = 0$ \textbf{to} $A.\text{length} - 1$}
-	\If{$A[i] == \nu$}
-	\State \Return $i$
-	\EndIf
-	\State \Return NIL
-	\EndFor
-	\EndProcedure
-\end{algorithmic}
+\begin{codebox}
+	\Procname{$\proc{Linear-Search}(A,\nu)$}
+	\li \For $i = 0$ \To $A.\text{length}-1$
+	\li \Do
+				\If $A[i] \isequal \nu$
+	\li		\Then
+					\Return $i$
+				\End
+			\End
+	\li		\Return \const{nil}
+\end{codebox}
 
 \begin{invariant}
-	At the start of each iteration of the \textbf{for} loop (lines 2--7) $i-1$ is not an index of $A$ such that $A[i-1]=\nu$.
+	At the start of each iteration of the \textbf{for} loop (lines 1--4) $i-1$ is not an index of $A$ such that $A[i-1]=\nu$.
 \end{invariant}
 
 \begin{proof}
@@ -48,43 +50,148 @@
 	An array $C=(c_{1},\ldots,c_{n},c_{n+1})$ such that $0\leq c_{i}\leq 1$ for $i=1,\ldots,n+1$ and $C'=A'+B'$ where $\cdot'$ is the integer represented by $\cdot$.
 \end{outp}
 
-\begin{algorithmic}[1]
-	\Procedure{\textit{BINARY ADDITION}}{$A$, $B$}
-	\State \textbf{Define} integer $C[A.\text{length}+1]$
-	\State $\text{overflow}=0$
-	\For{$i=0$ \textbf{to} $A.\text{length}-1$}
-	\State $C[i] = (A[i]+B[i]+\text{overflow})\text{ \% }2$
-	\State $\text{overflow} = (A[i]+B[i]+\text{overflow})/2$
-	\EndFor
-	\State $C[i]=\text{overflow}$
-	\State \Return C
-	\EndProcedure
-\end{algorithmic}
+\begin{codebox}
+	\Procname{$\proc{Binary-Addition}(A,B)$}
+	\li \Define integer $C[A.\text{length}+1]$
+	\li overflow $=0$
+	\li	\For $i = 0$ \To $A.\text{length}-1$
+	\li \Do
+				$C[i] = (A[i] + B[i] + \text{overflow})$ \% $2$
+	\li		overflow $= (A[i] + B[i] + \text{overflow})/2$
+			\End
+	\li $C[i] =$ overflow
+	\li \Return $C$
+\end{codebox}
 
 \subsection*{2.2--1}
 
-The function is $O(x^{3})$
+The function is $O(n^{3})$
 
 \subsection*{2.2--2}
 
-\begin{algorithmic}[1]
-	\Procedure{\textit{SELECTION SORT}}{$A$}
-	\For{$i=0$ \textbf{to} $A.\text{length}-2$}
-	\State $\text{min} = i$
-	\For{$j=i+1$ \textbf{to} $A.\text{length}-1$}
-	\If{$A[j] < A[\text{min}]$}
-	\State $\text{min} = j$
-	\EndIf
-	\EndFor
-	\State $M=A[\text{min}]$
-	\State $A[\text{min}] = A[i]$
-	\State $A[i] = M$
-	\EndFor
-	\EndProcedure
-\end{algorithmic}
+\begin{multicols}{2}
+	\begin{codebox}
+		\Procname{$\proc{Selection-Sort}(A)$}
+		\li	\For $i = 0$ \To $A.\text{length}-2$
+		\li	\Do
+					min $= i$
+		\li		\For $j = i+1$ \To $A.$length$-1$
+		\li		\Do
+						\If $A[j] < A[\text{min}]$
+		\li			\Then
+							min = $j$
+						\End
+					\End
+		\li $M = A[\text{min}]$
+		\li $A[\text{min}] = A[i]$
+		\li $A[i] = M$
+					\End
+		\end{codebox}
+		\columnbreak
+		\begin{tabular}{ l l }
+			cost & times\\[4pt]
+			$c_{1}$ & $n$\\
+			$c_{2}$ & $n-1$\\
+			$c_{3}$ & $\sum_{i=0}^{n}(n-i+1)$\\
+			$c_{4}$ & $\sum_{i=0}^{n}(n-i)$\\
+			$c_{5}$ & $\sum_{i=0}^{n}t_{i}$\\
+			$c_{6}$ & $n-1$\\
+			$c_{7}$ & $n-1$\\
+			$c_{8}$ & $n-1$
+		\end{tabular}
+\end{multicols}
 
 \begin{invariant}
-	At the start of each iteration of the \textbf{for} loop (lines 2--12) the sub--array $A[0\ldots i]$ is sorted in non--decreasing order.
+	At the start of each iteration of the \textbf{for} loop (lines 1--8) the sub-array $A[0\ldots i]$ is sorted in non-decreasing order.
 \end{invariant}
 
-The algorithm only needs to run for the first $n-1$ elements since this will arrange the $n-1$ smallest elements in non--decreasing order, ensuring the $n^{\text{th}}$ element at the end is in the appropriate position. That is, $A[n]\geq A[i]$ for $i=0,\ldots,n-2$.
+The algorithm only needs to run for the first $n-1$ elements since this will arrange the $n-1$ smallest elements in non-decreasing order, ensuring the $n^{\text{th}}$ element at the end is in the appropriate position. That is, $A[n]\geq A[i]$ for $i=0,\ldots,n-2$.
+
+The best-case running time occurs when the given array is already sorted from smallest to largest. In such a case $t_{i}=0$ since we never need to re-assign the minimum index. The runtime equation is, 
+\begin{equation*}
+	\begin{aligned}
+		T(n) &= c_{1}n + (c_{2}+c_{6}+c_{7}+c_{8})(n-1) + c_{3}\sum_{i=0}^{n}(n-i+1) + c_{4}\sum_{i=0}^{n}(n-i)\\
+		&= c_{1}n + (c_{2}+c_{6}+c_{7}+c_{8})(n-1) + c_{3}\left((n+1) + \frac{n}{2}(n+1)\right) + c_{4}\left(n + \frac{n}{2}(n-1)\right)\\
+		&= (c_{3}+c_{4})\frac{n^{2}}{2} + (c_{1} + c_{2} + c_{6} + c_{7} + c_{8} + \frac{3}{2}c_{3} + \frac{1}{2}c_{4})n + (c_{2}+c_{6}+c_{7}+c_{8} + c_{3})
+	\end{aligned}
+\end{equation*}
+and so the best-case running time is $O(n^{2})$. In a worst-case scenario, the array given to the procedure is in descending order, however this would only include an additional term to $T(n)$ above,
+\begin{equation*}
+	c_{5}\sum_{i=0}^{n}(n-1) = c_{5}\left(n + \frac{n}{2}(n-1)\right) = \frac{1}{2}c_{5}(n^{2}+n)
+\end{equation*}
+since here line 5 will re-assign the minimum for all remaining entries in the array. So the runtime in a worst-case scenario is also $O(n^{2})$.
+
+\subsection*{2.2--3}
+
+\begin{multicols}{2}
+	\begin{codebox}
+		\Procname{$\proc{Linear-Search}(A,\nu)$}
+		\li \For $i = 0$ \To $A.\text{length}-1$
+		\li	\Do
+					\If $A[i] \isequal \nu$
+		\li		\Then
+						\Return $i$
+					\End
+				\End
+		\li \Return \const{nil}
+	\end{codebox}
+	\columnbreak
+	\begin{tabular}{ l l }
+		cost & times\\
+		$c_{1}$ & $n+1$\\
+		$c_{2}$ & $n$\\
+		$c_{3}$ & $t_{1}$\\
+		$c_{4}$ & $t_{2}$
+	\end{tabular}
+\end{multicols}
+
+If each of the $n$ elements of $A$ have equal probability $p$ to be $\nu$ then the expected value is,
+\begin{equation*}
+	E[\nu] = 0\times\frac{1}{n}+1\times\frac{1}{n} + 2\times\frac{1}{n} + \cdots + n\times\frac{1}{n} = \frac{1}{n}\sum_{i=1}^{n}i = \frac{1}{n}\frac{n}{2}(n+1) = \frac{n+1}{2}
+\end{equation*}
+and hence on average we need to search through $\frac{n+1}{2}$ elements to find $\nu$. In the worst case we need to search $n$ elements since $\nu$ is not present in $A$. We have the following runtime equation,
+\begin{equation*}
+	T(n) = c_{1}(n+1) + c_{2}n + c_{3}t_{1} + c_{4}t_{2}
+\end{equation*}
+In the average-case $t_{1}=\frac{1}{2}=t_{2}$ then,
+\begin{equation*}
+	T(n) = (c_{1} + c_{2})n + c_{1} + \frac{1}{2}(c_{3} + c_{4})
+\end{equation*}
+and so the runtime is $O(n)$. In the worst-case $t_{1}=0$ and $t_{2}=1$ so the runtime equation is,
+\begin{equation*}
+	T(n) = (c_{1} + c_{2})n + c_{1} + c_{3}
+\end{equation*}
+and so we still have $O(n)$ runtime.
+
+\subsection*{2.2--4}
+
+Implement a checking loop/statement to return the procedure if in a best-case scenario. For example in Selection-Sort we can implement an initial loop that checks if the given array is already in sorted order and then return,
+\begin{multicols}{2}
+	\begin{codebox}
+		\Procname{}
+		\li \For $i = 0$ \To $A.\text{length}-2$
+		\li \Do
+					\If $A[i] > A[i+1]$
+		\li		\Then
+						\Break
+					\End
+				\End
+		\li \If $i \isequal A.\text{length}-2$
+		\li \Then
+					\Return
+				\End
+	\end{codebox}
+	\begin{tabular}{ l l }
+		cost & times\\
+		$c_{1}$ & $n$\\
+		$c_{2}$ & $n-1$\\
+		$c_{3}$ & $t_{1}$\\
+		$c_{4}$ & $1$\\
+		$c_{5}$ & $t_{2}$
+	\end{tabular}
+\end{multicols}
+In such a case the runtime will be,
+\begin{equation*}
+	T(n) = (c_{1}+c_{2})n - c_{2} + c_{4} + c_{5}
+\end{equation*}
+which is $O(n)$ a significant improvement over $O(n^{2})$ in the above exercise.
