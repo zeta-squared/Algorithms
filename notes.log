@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  10 JUL 2022 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  11 JUL 2022 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,7 +544,137 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \colbreak@box=\box99
 \mc@col@check@num=\count304
 )
-\c@theorem=\count305
+(/usr/share/texmf-dist/tex/latex/qtree/qtree.sty
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+(/usr/share/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(/usr/share/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(/usr/share/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks37
+\@arclen=\dimen168
+\@arcrad=\dimen169
+\pIIe@tempdima=\dimen170
+\pIIe@tempdimb=\dimen171
+\pIIe@tempdimc=\dimen172
+\pIIe@tempdimd=\dimen173
+\pIIe@tempdime=\dimen174
+\pIIe@tempdimf=\dimen175
+)
+\c@treecount=\count305
+\c@branchcount=\count306
+\parentbox=\box100
+\treebox=\box101
+\treeboxone=\box102
+\treeboxtwo=\box103
+\treeboxthree=\box104
+\treeboxfour=\box105
+\treeboxfive=\box106
+\treeboxsix=\box107
+\treeboxseven=\box108
+\treeboxeight=\box109
+\treeboxnine=\box110
+\treeboxten=\box111
+\treeboxeleven=\box112
+\treeboxtwelve=\box113
+\treeboxthirteen=\box114
+\treeboxfourteen=\box115
+\treeboxfifteen=\box116
+\treeboxsixteen=\box117
+\treeboxseventeen=\box118
+\treeboxeighteen=\box119
+\treeboxnineteen=\box120
+\treeboxtwenty=\box121
+\treeoffsetone=\skip62
+\treeoffsettwo=\skip63
+\treeoffsetthree=\skip64
+\treeoffsetfour=\skip65
+\treeoffsetfive=\skip66
+\treeoffsetsix=\skip67
+\treeoffsetseven=\skip68
+\treeoffseteight=\skip69
+\treeoffsetnine=\skip70
+\treeoffsetten=\skip71
+\treeoffseteleven=\skip72
+\treeoffsettwelve=\skip73
+\treeoffsetthirteen=\skip74
+\treeoffsetfourteen=\skip75
+\treeoffsetfifteen=\skip76
+\treeoffsetsixteen=\skip77
+\treeoffsetseventeen=\skip78
+\treeoffseteighteen=\skip79
+\treeoffsetnineteen=\skip80
+\treeoffsettwenty=\skip81
+\treeshiftone=\skip82
+\treeshifttwo=\skip83
+\treeshiftthree=\skip84
+\treeshiftfour=\skip85
+\treeshiftfive=\skip86
+\treeshiftsix=\skip87
+\treeshiftseven=\skip88
+\treeshifteight=\skip89
+\treeshiftnine=\skip90
+\treeshiftten=\skip91
+\treeshifteleven=\skip92
+\treeshifttwelve=\skip93
+\treeshiftthirteen=\skip94
+\treeshiftfourteen=\skip95
+\treeshiftfifteen=\skip96
+\treeshiftsixteen=\skip97
+\treeshiftseventeen=\skip98
+\treeshifteighteen=\skip99
+\treeshiftnineteen=\skip100
+\treeshifttwenty=\skip101
+\treewidthone=\skip102
+\treewidthtwo=\skip103
+\treewidththree=\skip104
+\treewidthfour=\skip105
+\treewidthfive=\skip106
+\treewidthsix=\skip107
+\treewidthseven=\skip108
+\treewidtheight=\skip109
+\treewidthnine=\skip110
+\treewidthten=\skip111
+\treewidtheleven=\skip112
+\treewidthtwelve=\skip113
+\treewidththirteen=\skip114
+\treewidthfourteen=\skip115
+\treewidthfifteen=\skip116
+\treewidthsixteen=\skip117
+\treewidthseventeen=\skip118
+\treewidtheighteen=\skip119
+\treewidthnineteen=\skip120
+\treewidthtwenty=\skip121
+\daughteroffsetone=\skip122
+\daughteroffsettwo=\skip123
+\daughteroffsetthree=\skip124
+\daughteroffsetfour=\skip125
+\branchwidthone=\skip126
+\branchwidthtwo=\skip127
+\branchwidththree=\skip128
+\branchwidthfour=\skip129
+\parentoffset=\skip130
+\treeoffset=\skip131
+\daughteroffset=\skip132
+\branchwidth=\skip133
+\parentwidth=\skip134
+\treewidth=\skip135
+\qta=\toks38
+\qtb=\toks39
+\nbranches=\count307
+\qroofx=\count308
+\qroofy=\count309
+\@qrscratchbox=\box122
+)
+\c@theorem=\count310
 )
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
 e 8.
@@ -557,8 +687,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
-\l__pdf_internal_box=\box100
+\l__color_backend_stack_int=\count311
+\l__pdf_internal_box=\box123
 ) (./notes.aux
 (./Chapter 2/chapter2.aux))
 \openout1 = `notes.aux'.
@@ -607,8 +737,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-\c@mv@tabular=\count307
-\c@mv@boldtabular=\count308
+\c@mv@tabular=\count312
+\c@mv@boldtabular=\count313
 Package hyperref Info: Link coloring OFF on input line 8.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -620,7 +750,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count314
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -628,17 +758,17 @@ LaTeX Info: Redefining \nameref on input line 8.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen168
-\scratchbox=\box101
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen169
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count315
+\scratchdimen=\dimen176
+\scratchbox=\box124
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen177
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -710,28 +840,65 @@ Overfull \hbox (22.32498pt too wide) detected at line 117
 [][]
  []
 
-[3] [4]) [5] (./notes.aux (./Chapter 2/chapter2.aux)) ) 
+[3] [4]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 203.
+
+Overfull \hbox (38.13144pt too wide) in paragraph at lines 203--204
+ [] 
+ []
+
+
+Overfull \hbox (38.13144pt too wide) in paragraph at lines 207--208
+ [] 
+ []
+
+[5]
+Warning: Indentation ends at level 1 in codebox on page 6.
+LaTeX Font Info:    Trying to load font information for OT1+ntxth-tlf on input 
+line 249.
+(/usr/share/texmf-dist/tex/latex/newtx/ot1ntxth-tlf.fd
+File: ot1ntxth-tlf.fd 2021/05/06 v1.0 font definition file for OT1/ntxth/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/n' in size <12> not available
+(Font)              Font shape `OT1/ntxth-tlf/m/it' tried instead on input line
+ 249.
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 249.
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/n' in size <8.8> not available
+(Font)              Font shape `OT1/ntxth-tlf/m/it' tried instead on input line
+ 255.
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/it' will be
+(Font)              scaled to size 8.8pt on input line 255.
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/n' in size <6.6> not available
+(Font)              Font shape `OT1/ntxth-tlf/m/it' tried instead on input line
+ 255.
+LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/it' will be
+(Font)              scaled to size 6.6pt on input line 255.
+ [6]) [7] (./notes.aux
+(./Chapter 2/chapter2.aux)) ) 
 Here is how much of TeX's memory you used:
- 13548 strings out of 478238
- 201862 string characters out of 5850456
- 482517 words of memory out of 5000000
- 31530 multiletter control sequences out of 15000+600000
- 512556 words of font info for 114 fonts, out of 8000000 for 9000
+ 14007 strings out of 478238
+ 208585 string characters out of 5850456
+ 513667 words of memory out of 5000000
+ 31958 multiletter control sequences out of 15000+600000
+ 528896 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,90p,995b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/f
-onts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/new
-tx/ntx-ot1-tlf-pc.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.p
-fb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-
-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb
-></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dis
-t/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public/n
-ewtx/ztmri.pfb>
-Output written on notes.pdf (5 pages, 145300 bytes).
+ 84i,9n,90p,995b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-o
+t1-th-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/us
+r/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}</usr/share/texmf-d
+ist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb>
+</usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-d
+ist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></
+usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/f
+onts/type1/public/newtx/ztmri.pfb>
+Output written on notes.pdf (7 pages, 156957 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

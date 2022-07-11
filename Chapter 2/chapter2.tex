@@ -195,3 +195,79 @@ In such a case the runtime will be,
 	T(n) = (c_{1}+c_{2})n - c_{2} + c_{4} + c_{5}
 \end{equation*}
 which is $O(n)$ a significant improvement over $O(n^{2})$ in the above exercise.
+
+\subsection*{2.3--1}
+
+We first divide the array into sub-arrays until we have arrays of length $1$.
+\begin{center}
+	\small\Tree [.{$\left[3, 41, 52, 26, 38, 57, 9, 49\right]$} [.{$\left[3, 41, 52, 26\right]$} [.{$\left[3, 41\right]$} [{$\left[3\right]$} ] [{$\left[41\right]$} ] ] [.{$\left[52, 26\right]$} [{$\left[52\right]$} ] [{$\left[26\right]$} ] ] ] [.{$\left[38, 57, 9, 49\right]$} [.{$\left[38, 57\right]$} [{$\left[38\right]$} ] [{$\left[57\right]$} ] ] [.{$\left[9, 49\right]$} [{$\left[9\right]$} ] [{$\left[49\right]$} ] ] ] ]
+\end{center}
+Then we merge to eventually recover the original array in sorted order.
+\begin{center}
+	\small\Tree [.{$\left[3, 9, 26, 38, 41, 49, 52, 57\right]$} [.{$\left[3, 26, 41, 52\right]$} [.{$\left[3, 41\right]$} [{$\left[3\right]$} ] [{$\left[41\right]$} ] ] [.{$\left[26, 52\right]$} [{$\left[52\right]$} ] [{$\left[26\right]$} ] ] ] [.{$\left[9, 38, 49, 57\right]$} [.{$\left[38, 57\right]$} [{$\left[38\right]$} ] [{$\left[57\right]$} ] ] [.{$\left[9, 49\right]$} [{$\left[9\right]$} ] [{$\left[49\right]$} ] ] ] ]
+\end{center}
+
+\subsection*{2.3--2}
+
+\begin{codebox}
+	\Procname{$\proc{Merge}(A,p,q,r)$}
+	\li $n_{1} = q - p$
+	\li $n_{2} = r - q - 1$
+	\li \Define integers $L[0\ldots n_{1}]$ and $R[0\ldots n_{2}]$
+	\li \For $i = 0$ \To $n_{1}$
+	\li \Do
+				$L[i] = A[p+i]$
+			\End
+	\li \For $j = 0$ \To $n_{2}$
+	\li \Do
+				$R[j] = A[q+j+1]$
+			\End
+	\li $i = 0$
+	\li $j = 0$
+	\li \For $k = p$ \To $r$
+	\li	\Do
+				\If $i > n_{1}$
+	\li		\Then
+					$A[k] = R[j]$
+	\li			$j = j + 1$
+	\li 	\ElseIf $j > n_{2}$
+	\li		\Then
+					$A[k] = L[i]$
+	\li			$i = i + 1$
+	\li		\ElseIf $L[i] \leq R[j]$
+	\li		\Then
+					$A[k] = L[i]$
+	\li			$i = i + 1$
+	\li		\Else
+	\li			$A[k] = R[j]$
+	\li			$j = j + 1$
+			\End
+\end{codebox}
+
+\subsection*{2.3--3}
+
+\begin{proposition}
+	\label{prop:power-2-recurrence}
+	If $n=2^{k}$ for $k\in\mathbb{N}\setminus\{0\}$ then the solution of,
+	\begin{equation*}
+		T(n) =
+		\begin{cases}
+			2 &\text{if }k=1\\
+			2T(n/2) + n &\text{if }k>1
+		\end{cases}
+	\end{equation*}
+	is $T(n)=n\lg n$.
+\end{proposition}
+
+\begin{proof}
+	If $k=1$ we have $n=2$ so $T(2) = 2 = 2\lg 2$. Now assume this is true for some $k=m>1$ then $T(2^{m}) = 2^{m}\lg 2^{m}$ so for $2^{m+1}$ we have the recurrence,
+	\begin{equation*}
+		\begin{aligned}
+			T(2^{m+1}) = 2T(2^{m+1}/2) + 2^{m+1} &= 2T(2^{m}) + 2\cdot2^{m}\\
+			&= 2\cdot2^{m}\lg 2^{m} + 2\cdot 2^{m}\\
+			&= 2^{m+1}\left(\lg 2^{m} + 1\right)\\
+			&= 2^{m+1}\left(\lg 2^{m} + \lg 2\right) = 2^{m+1}\lg 2^{m+1}
+		\end{aligned}
+	\end{equation*}
+	Hence the solution for any $n=2^{k}$, $k\in\mathbb{N}\setminus\{0\}$, is $T(n)=n\lg n$.
+\end{proof}
