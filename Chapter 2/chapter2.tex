@@ -9,12 +9,12 @@
 	\li	\Do
 				key $= A[i]$
 	\li 	$j = i - 1$
-	\li		\While $j > 0$ \textbf{and} $A[j] <$ key
+	\li		\While $j > -1$ \textbf{and} $A[j] <$ key
 	\li		\Do
 					$A[j+1] = A[j]$
 	\li			$j = j - 1$
 				\End
-	\li		$A[i+1] =$ key
+	\li		$A[j+1] =$ key
 			\End
 \end{codebox}
 
@@ -271,3 +271,77 @@ Then we merge to eventually recover the original array in sorted order.
 	\end{equation*}
 	Hence the solution for any $n=2^{k}$, $k\in\mathbb{N}\setminus\{0\}$, is $T(n)=n\lg n$.
 \end{proof}
+
+\subsection*{2.3--4}
+
+Let $T(n)$ be the time to sort an array of length $n$ and $I(n)$ be the time to insert an element into an array of length $n$.
+\begin{equation*}
+	T(n) =
+	\begin{cases}
+		O(1)& \text{if }n=1\\
+		T(n-1) + I(n-1)& \text{otherwise}
+	\end{cases}
+\end{equation*}
+
+\subsection*{2.3--5}
+
+\begin{codebox}
+	\Procname{$\proc{Binary-Search}(A,\nu)$}
+	\li mid $= \lfloor A.\text{length}/2 \rfloor$
+	\li \If $A[\text{mid}] \isequal \nu$
+	\li \Then
+				\Return mid
+			\End
+	\li \ElseIf $A[\text{mid}]<\nu$
+	\li	\Then
+				$\proc{Binary-Search}(A[0\ldots \text{mid}], \nu)$
+			\End
+	\li \Else
+	\li	\Then
+				$\proc{Binary-Search}(A[\text{mid}\ldots A.\text{length}])$
+			\End
+	\li \Return \const{nil}
+\end{codebox}
+
+The running time of this algorithm consists of the re-running binary-search on arrays of approximate length $n/2$ twice and checking if the middle value of the total array is the target value, $\nu$. We can express this as the recurrence,
+\begin{equation*}
+	T(n) =
+	\begin{cases}
+		O(1)& \text{if }n=1\\
+		T(n/2) + c& \text{otherwise}
+	\end{cases}
+\end{equation*}
+
+The worst case scenario occurs when $A$ does not contain $\nu$ in which case we can expand the recurrence as,
+\begin{equation*}
+	\begin{aligned}
+		T(n) &= T\left(\frac{n}{2}\right) + c\\
+		&= T\left(\frac{n}{2\cdot2}\right) + (1 + 1)c\\
+		&= T\left(\frac{n}{2\cdot2\cdot2}\right) + (1 + 1 + 1)c\\
+		&\vdots\\
+		&= T\left(\frac{n}{2^{\lg n + 1}}\right) + (\lg n + 1)c \approx T(1) + (\lg n + 1)c
+	\end{aligned}
+\end{equation*}
+So after $\lg n + 1$ iterations the algorithm returns $\const{nil}$ and from above we have that the runtime is $O(\lg n)$.
+
+\subsection*{2.3--6}
+
+No, this is not possible since insertion-sort will still need to shift $i-1$ elements which will always create $O(n^{2})$ time in the worst case.
+
+\subsection*{2.3--7}
+
+We first need to sort $S$ in ascending order. We can then determine whether there are two elements of $S$ that sum to $x$ by performing a binary-search for $x-S[i]$ in $S$.
+\begin{codebox}
+	\Procname{$\proc{Sum-Decomposition}(S,x)$}
+	\li $S = \proc{Merge-Sort}(S,0,S.\text{length})$
+	\li \For $i=0$ \To $S.\text{length}$
+	\li \Do
+				\If $\proc{Binary-Search}(S,x-S[i]) \neq \const{nil}$
+	\li		\Then
+					\Return \const{true}
+				\End
+			\End
+	\li \Return \const{false}
+\end{codebox}
+
+From earlier in the chapter merge-sort will at worst take $O(n\lg n)$ and from 2.3--5 binary-search is at worst $O(\lg n)$. However as we loop on binary-search the worst-case for the loop on lines 2--4 will be $O(n\lg n)$. Hence, sum-decomposition has a worst-case runtime of $O(n\lg n)$.

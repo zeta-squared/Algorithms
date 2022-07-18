@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  11 JUL 2022 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  18 JUL 2022 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,13 +690,14 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box123
 ) (./notes.aux
-(./Chapter 2/chapter2.aux))
+(./Chapter 2/chapter2.aux) (./Appendix/appendix.aux))
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 8.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  8.
- (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
+
+(/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 8.
@@ -713,6 +714,7 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 8.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
 8.
+
 (/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
@@ -875,30 +877,43 @@ LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/n' in size <6.6> not available
  255.
 LaTeX Font Info:    Font shape `OT1/ntxth-tlf/m/it' will be
 (Font)              scaled to size 6.6pt on input line 255.
- [6]) [7] (./notes.aux
-(./Chapter 2/chapter2.aux)) ) 
+ [6]
+Warning: Indentation ends at level -1 in codebox on page 7.
+[7]) [8] [9]
+\openout2 = `Appendix/appendix.aux'.
+
+ (./Appendix/appendix.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 3.
+) [10
+
+
+
+] (./notes.aux
+(./Chapter 2/chapter2.aux) (./Appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 14007 strings out of 478238
- 208585 string characters out of 5850456
- 513667 words of memory out of 5000000
- 31958 multiletter control sequences out of 15000+600000
- 528896 words of font info for 147 fonts, out of 8000000 for 9000
+ 14047 strings out of 478238
+ 209707 string characters out of 5850456
+ 514098 words of memory out of 5000000
+ 31980 multiletter control sequences out of 15000+600000
+ 530708 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,90p,995b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-o
-t1-th-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/us
-r/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}</usr/share/texmf-d
-ist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb>
-</usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-d
-ist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></
-usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/f
-onts/type1/public/newtx/ztmri.pfb>
-Output written on notes.pdf (7 pages, 156957 bytes).
+ 84i,10n,90p,995b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/f
+onts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/new
+tx/ntx-ot1-th-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-
+pc.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/
+texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type
+1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txs
+ya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/
+texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type
+1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmbi.p
+fb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-d
+ist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on notes.pdf (10 pages, 194524 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
