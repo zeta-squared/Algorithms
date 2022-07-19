@@ -286,21 +286,24 @@ Let $T(n)$ be the time to sort an array of length $n$ and $I(n)$ be the time to 
 \subsection*{2.3--5}
 
 \begin{codebox}
-	\Procname{$\proc{Binary-Search}(A,\nu)$}
+	\Procname{$\proc{Binary-Search}(A, \nu)$}
 	\li mid $= \lfloor A.\text{length}/2 \rfloor$
 	\li \If $A[\text{mid}] \isequal \nu$
 	\li \Then
 				\Return mid
 			\End
+	\li \ElseIf mid $\isequal 0$
+	\li	\Then
+				\Return \const{false}
+			\End
 	\li \ElseIf $A[\text{mid}]<\nu$
 	\li	\Then
-				$\proc{Binary-Search}(A[0\ldots \text{mid}], \nu)$
+				$\proc{Binary-Search}(A[\text{mid}\ldots A.\text{length}-1], \nu)$
 			\End
 	\li \Else
 	\li	\Then
-				$\proc{Binary-Search}(A[\text{mid}\ldots A.\text{length}])$
+				$\proc{Binary-Search}(A[0\ldots \text{mid}], \nu)$
 			\End
-	\li \Return \const{nil}
 \end{codebox}
 
 The running time of this algorithm consists of the re-running binary-search on arrays of approximate length $n/2$ twice and checking if the middle value of the total array is the target value, $\nu$. We can express this as the recurrence,
