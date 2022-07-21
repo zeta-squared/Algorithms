@@ -166,3 +166,83 @@ It is clear from the definition that the algorithm runtime may or may not be les
 		&c_{2}\left|g(n,m)\right|\leq\left|f(n,m)\right| \leq c_{1}\left|g(n,m)\right|\,\forall n\geq n_{0}\text{ or }m\geq m_{0}\}
 	\end{aligned}
 \end{equation*}
+
+\subsection{Standard Notations and Common Functions}
+
+\subsubsection*{3.2--1}
+
+\begin{proposition}
+	\label{prop:monotone}
+	Let $f,g:\mathbb{N}\to\mathbb{N}$ such that $f$ and $g$ are monotonically increasing. Then $f(n)+g(n)$, $f(g(n))$ and $g(f(n))$ are monotonically increasing. Moreover, if $f$ and $g$ are non-negative then $f(n)\cdot g(n)$ is monotonically increasing.
+\end{proposition}
+
+\begin{proof}
+	Clearly,
+	\begin{equation*}
+		f(n)+g(n)\leq f(m)+g(m)
+	\end{equation*}
+	for all $n,m\in\mathbb{N}$ such that $n\leq m$. Now if $n,m\in\mathbb{N}$ so that $n\leq m$ then,
+	\begin{equation*}
+		g(n)\leq g(m)\implies f(g(n))\leq f(g(m))
+	\end{equation*}
+	Likewise the result will be true for $g(f(n))$. If $f$ and $g$ are non-negative then $f(n)\cdot g(n)$ is non-negative for all $n\in\mathbb{N}$. So for $n,m\in\mathbb{N}$ such that $n\leq m$,
+	\begin{equation*}
+		f(n)\cdot g(n)\leq f(m)\cdot g(n)\leq f(m)\cdot g(m)
+	\end{equation*}
+\end{proof}
+
+\begin{remark}
+	\label{rem:monotone}
+	The results of Proposition \ref{prop:monotone} are strict if $f$ and $g$ are strictly monotonically increasing.
+\end{remark}
+
+\subsubsection*{3.2--2}
+
+We write,
+\begin{equation*}
+	a^{\log_{b}c} = a^{\frac{\log_{a}c}{\log_{a}b}} = \left(a^{\log_{a}c}\right)^{\frac{1}{\log_{a}b}} = c^{\frac{1}{\log_{a}b}}
+\end{equation*}
+Now,
+\begin{equation*}
+	\frac{1}{\log_{a}b}=\frac{\log_{b}a}{\log_{b}b}=\log_{b}a
+\end{equation*}
+Hence, from above,
+\begin{equation*}
+	a^{\log_{b}c} = c^{\frac{1}{\log_{a}b}}=c^{\log_{b}a}
+\end{equation*}
+
+\subsubsection*{3.2--3}
+
+Stating Sterling's approximation,
+\begin{equation*}
+	n! = \sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}\left(1+\Theta\left(\frac{1}{n}\right)\right)
+\end{equation*}
+we then have,
+\begin{equation*}
+	\begin{aligned}
+		\lg n! &= \lg\left(\sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}\left(1+\Theta\left(\frac{1}{n}\right)\right)\right)\\
+		&= \lg \sqrt{2\pi n} + n\lg \frac{n}{e} + \lg\left(1+\Theta\left(\frac{1}{n}\right)\right)\\
+		&= \frac{1}{2}+\frac{1}{2}\lg\pi + \frac{1}{2}\lg n + n\lg\frac{1}{e} + n\lg n + \lg\left(1+\Theta\left(\frac{1}{n}\right)\right)\\
+		&= \Theta(1) + \Theta(1) + \Theta(\lg n) + \Theta(n) + \Theta(n\lg n) + \lg\Theta(1) = \Theta(n\lg n)
+	\end{aligned}
+\end{equation*}
+
+Now,
+\begin{equation*}
+	n! = n\cdot(n-1)\cdots2\cdot1 < n\cdot n\cdots n\cdot n = n^{n}\quad\forall n\in\mathbb{N}
+\end{equation*}
+So for $c\geq 1$ we have the desired property. For $0<c<1$ choose $n_{0}$ so that $cn_{0} > 1$ then,
+\begin{equation*}
+	n! = n\cdot(n-1)\cdots2\cdot1 < n\cdot(n-1)\cdots2\cdot cn < c n^{n}\quad\forall n\geq n_{0}
+\end{equation*}
+Hence, $n!=o(n^{n})$.
+
+Finally,
+\begin{equation*}
+	n! = n\cdot(n-1)\cdots 2\cdot1 = n\cdot(n-1)\cdots 2 > 2^{n-1}=\frac{1}{2}2^{n}\quad\forall n\in\mathbb{N}
+\end{equation*}
+So for $c\leq\frac{1}{2}$ we have the desired property. For $c>\frac{1}{2}$ choose $n_{0}$ so that $n_{0}>c2^{2}$ so,
+\begin{equation*}
+	n! = n\cdot(n-1)\cdots2>c2^{2}\cdot(n-1)\cdots2>c2^{n}\quad\forall n\geq n_{0}
+\end{equation*}
+Hence $n!=\Omega(2^{n})$.
