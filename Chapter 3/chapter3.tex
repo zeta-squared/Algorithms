@@ -167,7 +167,7 @@ It is clear from the definition that the algorithm runtime may or may not be les
 	\end{aligned}
 \end{equation*}
 
-\subsection{Standard Notations and Common Functions}
+\subsection{Standard Notations and Common Functions - Exercises}
 
 \subsubsection*{3.2--1}
 
@@ -334,10 +334,22 @@ If $k\lg k = \Theta(n)$ then there exists $c_{1},c_{2}>0$ and $n_{0},k_{0}\in\ma
 \end{equation*}
 which gives,
 \begin{equation*}
-	0 \leq c_{2}\frac{n}{\lg k}\leq k \leq c_{1}\frac{n}{\lg k}\quad\forall n\geq n_{0}, \forall k\geq k_{0}
+	\lg c_{2} + \lg n \leq \lg k + \lg\lg k \leq \lg c_{1} + \lg n
 \end{equation*}
-From $k\geq k_{0}$ we have,
+for all $n\geq n_{0}$ and $k\geq k_{0}$. So for $n\geq n_{0}$ sufficiently large such that $\lg c_{1}\leq \lg n$ we have,
 \begin{equation*}
-	0 \leq k \leq \frac{c_{1}}{\lg k_{0}}n\quad\forall n\geq n_{0}, \forall k\geq k_{0}
+	\lg k \leq \lg k + \lg\lg k \leq \lg c_{1} + \lg n \leq 2\lg n
 \end{equation*}
-so $k = O(n)$ and by symmetry $n = \Omega(k)$.
+and hence $\lg k = O(\lg n)$. Next,
+\begin{equation*}
+	\lg n \leq \lg c_{2} + \lg n \leq \lg k + \lg\lg k \leq 2\lg k
+\end{equation*}
+and so $\lg k = \Omega(\lg n)$. By Theorem \ref{thm:big-theta} we then have that $\lg k = \Theta(\lg n)$. Let $a_{1},a_{2}>0$ and $n_{0},k_{0}\geq 0$ be such that,
+\begin{equation*}
+	0 \leq a_{2}\lg n \leq \lg k \leq a_{1}\lg n \implies \frac{1}{a_{2}\lg n}\geq \frac{1}{\lg k}\geq \frac{1}{a_{1}\lg n}
+\end{equation*}
+so from the first inequality above if we take $n_{0}$ such that for all $n\geq n_{0}$ we have $\lg c_{1}\leq\lg n$ then,
+\begin{equation*}
+	c_{2}\frac{n}{\lg k} \leq k \leq c_{1}\frac{n}{\lg k} \implies\frac{c_{2}n}{a_{1}\lg n}\leq k \leq \frac{c_{1}n}{a_{2}\lg n}
+\end{equation*}
+for all $n\geq n_{0}$ and $k\geq k_{0}$. Therefore, $k=\Theta\left(\frac{n}{\lg n}\right)$.
