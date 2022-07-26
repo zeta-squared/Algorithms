@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  22 JUL 2022 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.23)  24 JUL 2022 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,13 +911,13 @@ Overfull \hbox (24.53911pt too wide) detected at line 168
 [][]
  []
 
-[13] [14]) [15]
+[13] [14] [15] [16]) [17]
 \openout2 = `Appendix/appendix.aux'.
 
  (./Appendix/appendix.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 3.
-) [16
+) [18
 
 
 
@@ -925,8 +925,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (./Chapter 1/chapter1.aux) (./Chapter 2/chapter2.aux) (./Chapter 3/chapter3.aux
 ) (./Appendix/appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 14164 strings out of 478238
- 212381 string characters out of 5850456
+ 14170 strings out of 478238
+ 212439 string characters out of 5850456
  515271 words of memory out of 5000000
  32041 multiletter control sequences out of 15000+600000
  532646 words of font info for 154 fonts, out of 8000000 for 9000
@@ -943,10 +943,10 @@ ublic/txfonts/txsyb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.p
 fb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-d
 ist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on notes.pdf (16 pages, 227827 bytes).
+Output written on notes.pdf (18 pages, 233650 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
