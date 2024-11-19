@@ -1,2 +1,43 @@
 \section{Elementary Data Structures}
 \label{sec:chapter10}
+
+The concept of data structures in computer science closely follows that of sets in mathematics. In principle,
+a data structure is an abstraction of what is referred to as a \textit{dynamic set}.
+\begin{definition}
+    \label{def:dynamic-set}
+    A dynamic set is an extension of the mathematical notion of a set where we allow the set to be
+    manipulated.
+\end{definition}
+
+Typical implementations of dynamic sets involve the set elements representing objects, that is pointers. As we
+do with pointers, a pointer belonging to a set is synonymous with the object it references belonging to the
+set. The manipulation of a dynamic set are prescribed operations generally grouped into \textit{queries} and
+\textit{modifiers}. A list of such typical operations is the following. Let $S$ denote a dynamic set, $x$ a
+member of $S$ and $k$ a key value: 
+\begin{itemize}
+    \item 
+        $\const{Search}(S,k)$\\
+        Return a pointer $x$ in $S$ such that $x.\text{key}=k$, or $\cont{nil}$ if no such element belongs to
+        $S$.
+    \item
+        $\const{Insert}(S,x)$\\
+        Add the pointer $x$ to the set $S$. We assume taht any attributes in the object that $x$ references
+        have been initialised in $S$.
+    \item
+        $\const{Delete}(S,x)$\\
+        Remove the pointer (and its referenced object) from the set $S$.
+    \item
+        $\const{Minimum}(S)$\\
+        Return the pointer $x$ such that $x$ contains the largest key value of all members of $S$.
+    \item
+        $\const{Maximum}(S)$\\
+        Return the pointer $x$ such that $x$ contains the smallest key value of all members of $S$.
+    \item
+        $\const{Successor}(S,x)$\\
+        Return a pointer $y$ in $S$ such that $y$ is the next largest element in $S$, relative to $x$. If $x$
+        is the maximum then $\const{nil}$ is returned.
+    \item
+        $\const{Predecessor}(S,x)$\\
+        Return a pointer $y$ in $S$ such that $y$ is the next smallest element in $S$, relative to $x$. If $x$
+        is the minimum then $\const{nil}$ is returned.
+\end{itemize}
